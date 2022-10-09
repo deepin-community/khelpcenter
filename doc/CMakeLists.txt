@@ -1,0 +1,4 @@
+ecm_optional_add_subdirectory(khelpcenter)
+ecm_optional_add_subdirectory(fundamentals)
+ecm_optional_add_subdirectory(glossary)
+ecm_optional_add_subdirectory(onlinehelp)

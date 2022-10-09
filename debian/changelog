@@ -1,0 +1,482 @@
+khelpcenter (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:13:12 +0900
+
+khelpcenter (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 18:43:27 +0900
+
+khelpcenter (4:20.12.0-1) unstable; urgency=medium
+
+  * New upstream release (20.12.0).
+  * Update the build dependencies according to the upstream build system:
+    - Qt >= 5.12
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Bump debhelper compatibility level to 13.
+  * Refresh upstream metadata.
+  * Update project homepage.
+  * Remove override for tag postinst-must-call-ldconfig dropped from lintian.
+  * Build with hardening=+all build hardening flag.
+  * Borrow minimal upstream signing key from k3b.
+  * Drop kde-l10n migration rules, not needed anymore after 2 stable releases.
+  * Drop breaks/replaces against khelpcenter4.
+  * Lintian renamed tag binary-without-manpage => no-manual-page.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 21 Dec 2020 15:17:35 +0100
+
+khelpcenter (4:20.04.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.0
+    - bump Qt packages to 5.9.0
+    - bump KF packages to 5.64.0
+    - explicitly add gettext
+  * Drop the migration from khelpcenter-dbg, no more needed after two Debian
+    stable releases.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Add Rules-Requires-Root: no.
+  * Unregister khelpcenter.categories as conffile, as it is no more in /etc.
+  * Update lintian overrides.
+  * Add the configuration for the CI on salsa.
+  * Conflict against dhelp < 0.6.26, as previous versions used to wipe out
+    /usr/share/doc/HTML. (Closes: #929882)
+
+ -- Pino Toscano <pino@debian.org>  Fri, 12 Jun 2020 11:18:10 +0200
+
+khelpcenter (4:18.04.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Remove the transitional khelpcenter4 package, already shipped in stable,
+    and no more referenced by packages in the Debian archive (Closes: #874757)
+    - stop forcing --destdir on dh_auto_install, there is only one binary now
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Bump Standards-Version to 4.1.4, no changes required.
+  * Use https for Format in copyright.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 09 May 2018 08:06:45 +0200
+
+khelpcenter (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * New upstream release.
+  * Bump Standards-Version to 4.1.2, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Remove duplicated Priority for khelpcenter4.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 09 Dec 2017 09:11:51 +0100
+
+khelpcenter (4:17.08.1-1) experimental; urgency=medium
+
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 12 Sep 2017 15:35:50 +0200
+
+khelpcenter (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:01:21 +0000
+
+khelpcenter (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:36:24 +0000
+
+khelpcenter (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:21:25 +0000
+
+khelpcenter (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:21:57 +0000
+
+khelpcenter (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:17:58 +0000
+
+khelpcenter (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:04:15 +0000
+
+khelpcenter (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:48:27 +0000
+
+khelpcenter (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:59:04 +0000
+
+khelpcenter (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:18:59 +0000
+
+khelpcenter (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:27:48 +0000
+
+khelpcenter (4:16.08.3-1) unstable; urgency=medium
+
+  * Set kinit as a hard runtime dependency
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 21:10:42 +0100
+
+khelpcenter (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:54:30 +0000
+
+khelpcenter (4:16.08.2-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 17 Oct 2016 23:31:37 +0200
+
+khelpcenter (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:39:53 +0000
+
+khelpcenter (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:06:48 +0000
+
+khelpcenter (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:48:53 +0000
+
+khelpcenter (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:38:27 +0000
+
+khelpcenter (4:16.04.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Force the local installation to debian/khelpcenter, which is the only real
+    binary; this avoids unnecessary copies of stuff from debian/tmp.
+    - remove khelpcenter.install, no more used now
+  * Remove outdated and unused not-installed file.
+  * Remove unused libkf5iconthemes-dev, libkf5kcmutils-dev, and
+    libkf5kdelibs4support-dev build dependencies.
+  * Remove khelpcenter-data breaks/replaces, since it applies only to Ubuntu.
+  * Use the ${perl:Depends} substvar, since there are perl scripts.
+  * Recommend man-db, as khelpcenter can search into man pages.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 02 Jul 2016 16:24:23 +0200
+
+khelpcenter (4:16.04.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Jun 2016 10:06:33 +0200
+
+khelpcenter (4:16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 15 Jun 2016 17:25:08 +0000
+
+khelpcenter (4:16.04.1-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 3.9.8
+  * debian/watch: khelpcenter moved to applications
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * uscan no longer supports this kind of watch files.
+  * New upstream release (5.5.5).
+  * Automatic update with ddeb_migration3.py
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Add pkg-config as a build dependency
+  * Update install files
+  * Add new lintian-override about ldconfig-trigger for libkdeinit5_khelpcenter.so
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 28 May 2016 01:39:51 +0200
+
+khelpcenter (4:5.5.4-1) experimental; urgency=medium
+
+  * New upstream release (5.5.0).
+  * New upstream release (5.5.1).
+  * New upstream release (5.5.2).
+  * New upstream release (5.5.3).
+  * New upstream release (5.5.4).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 27 Jan 2016 16:48:57 +0100
+
+khelpcenter (4:5.4.3-1) unstable; urgency=medium
+
+  * New upstream release (5.4.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Dec 2015 11:45:50 +0100
+
+khelpcenter (4:5.4.2-1) unstable; urgency=medium
+
+  * New upstream release (5.4.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 06 Oct 2015 07:52:04 +0200
+
+khelpcenter (4:5.4.1-1) unstable; urgency=medium
+
+  * New upstream release (5.4.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 11 Sep 2015 18:45:12 +0200
+
+khelpcenter (4:5.4.0-1) unstable; urgency=medium
+
+  [ Didier Raboud ]
+  * Correct the bug number closed in the previous upload
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.4.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 03 Sep 2015 14:05:29 +0200
+
+khelpcenter (4:5.3.2-2) unstable; urgency=medium
+
+  * Add versionned Breaks/Replaces against all kde-l10n packages in
+    jessie, as this package now ships its own translations
+    - Bump Build-Depends against pkg-kde-tools to 0.15.18~
+    - Use its new l10n-packages.mk with a kde-l10n fixed version 4:4.14.0-2~
+    (Closes: #790799, #790861)
+
+ -- Didier Raboud <odyx@debian.org>  Fri, 03 Jul 2015 12:17:43 +0200
+
+khelpcenter (4:5.3.2-1) unstable; urgency=medium
+
+  * New upstream release (5.3.2).
+  * Update copyright information.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 30 Jun 2015 20:39:15 +0200
+
+khelpcenter (4:5.3.1-0ubuntu2) wily; urgency=medium
+
+  * khelpcenter now depends on kdoctools5, this allows the program to load
+    themes. (LP: #1362753)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 09 Jun 2015 02:22:38 +0200
+
+khelpcenter (4:5.3.1-0ubuntu1) wily; urgency=medium
+
+  [ Jonathan Riddell ]
+  * Plasma 5.3 beta
+  * new upstream release
+
+  [ Scarlett Clark ]
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 05 Jun 2015 02:28:39 +0200
+
+khelpcenter (4:5.3.1-1) unstable; urgency=medium
+
+  * New upstream release (5.3.0).
+  * New upstream release (5.3.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 30 Jun 2015 10:12:31 +0200
+
+khelpcenter (4:5.3.1-0ubuntu2) wily; urgency=medium
+
+  * khelpcenter now depends on kdoctools5, this allows the program to load
+    themes. (LP: #1362753)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 09 Jun 2015 02:22:38 +0200
+
+khelpcenter (4:5.3.1-0ubuntu1) wily; urgency=medium
+
+  [ Jonathan Riddell ]
+  * Plasma 5.3 beta
+  * new upstream release
+
+  [ Scarlett Clark ]
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 05 Jun 2015 02:28:39 +0200
+
+khelpcenter (4:5.2.2-1) experimental; urgency=medium
+
+  * New upstream release (5.2.1).
+  * New upstream release (5.2.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 25 Mar 2015 23:17:35 +0100
+
+khelpcenter (4:5.2.1-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 23 Feb 2015 09:38:32 -0800
+
+khelpcenter (4:5.2.0-1) experimental; urgency=medium
+
+  * Prepare initial Debian release.
+  * Add myself as Uploader.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+  * Update copyright information.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 10 Feb 2015 09:29:43 +0100
+
+khelpcenter (4:5.2.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Harald Sitter <sitter@kde.org>  Tue, 27 Jan 2015 14:51:48 +0100
+
+khelpcenter (4:5.1.95-0ubuntu1) vivid; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 15 Jan 2015 01:25:50 +0100
+
+khelpcenter (4:5.1.2-0ubuntu2) vivid; urgency=medium
+
+  * Add khelpcenter4 transitional
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Jan 2015 12:40:35 +0100
+
+khelpcenter (4:5.1.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 15 Dec 2014 13:07:04 +0100
+
+khelpcenter (4:5.1.1-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release.
+
+  [ Jonathan Riddell ]
+  * New upstream beta release
+
+  [ Harald Sitter ]
+  * Add lintian overrides
+    + Override everything to do with kdeinit5 complaints as it is not
+      exactly a properly shared library by design
+    + We don't care about missing manpages
+    + The desktop file has no main category which is by design as it needs to
+      show up prominently in kickoff. It is however onlyshowin=kde, so there
+      is tighter control that a desktop entry menu gui implementation actually
+      supports this.
+  * Make install file more generic to catch future updates to
+    applications desktop file and binary name
+  * Clean up buld dependencies and remove everything not directly required by
+    khelpcenter itself
+  * Fix incorrectly bumped breaks and replaces against 5.0.0 -data package
+  * Fix khelpcenter4 relationships
+    + Drop the Conflicts on khelpcenter4
+    + Break and Replace khelpcenter4 << 5.0
+    + This change is to stay consistent, previously a Conflicts was used on
+      khelpcenter (which was the package name in KDE 3) which in turn caused
+      upgrade problems when going from khelpcenter4 to khelpcenter (Frameworks
+      5 version) because of being to broad a relationship.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 10 Nov 2014 19:43:41 +0100
+
+khelpcenter (4:5.0.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 17 Sep 2014 18:13:44 -0700
+
+khelpcenter (4:5.0.1-0ubuntu1~ubuntu14.10~ppa2) utopic; urgency=medium
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+  [ Scarlett Clark ]
+  * Update watch to http://download.kde.org
+
+  [ Harald Sitter ]
+  * Drop the khelpcenter-data package and merge it into the app package.
+    + Adjust installs accordingly
+  * Rename khelpcenter5-dbg to khelpcenter-dbg
+    + Adjust rules accordingly
+    + Doesn't replace conflict as there is no binary conflict due to
+      buildids
+
+  [ Jonathan Riddell ]
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 10 Aug 2014 15:41:18 +0200
+
+khelpcenter (4:4.98.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 07 Jul 2014 13:18:37 +0200
+
+khelpcenter (4:4.97.0a-0ubuntu1) utopic; urgency=medium
+
+  [ Scarlett Clark ]
+  * Initial package
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 09 Jun 2014 10:23:43 +0100

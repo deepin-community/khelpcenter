@@ -1,0 +1,6 @@
+khelpcenter: shared-library-lacks-version usr/lib/*/libkdeinit5_khelpcenter.so libkdeinit5_khelpcenter.so
+khelpcenter: lacks-ldconfig-trigger usr/lib/*/libkdeinit5_khelpcenter.so
+khelpcenter: no-symbols-control-file usr/lib/*/libkdeinit5_khelpcenter.so
+khelpcenter: no-manual-page usr/bin/khelpcenter
+khelpcenter: package-name-doesnt-match-sonames libkdeinit5-khelpcenter
+khelpcenter: desktop-entry-lacks-main-category usr/share/applications/org.kde.Help.desktop
